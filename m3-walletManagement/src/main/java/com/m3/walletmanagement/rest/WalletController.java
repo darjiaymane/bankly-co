@@ -11,6 +11,9 @@ import java.util.UUID;
 @RequestMapping("/api/wallets")
 public class WalletController{
     WalletService walletService;
+    public WalletController(WalletService walletService) {
+        this.walletService = walletService;
+    }
 
     @PostMapping("/create/{userId}")
     public ResponseEntity<ResponseDTO> createWallet(@PathVariable Long userId) {
