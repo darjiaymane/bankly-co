@@ -1,4 +1,4 @@
-package com.m2.transactionsmanagement.DTO;
+package com.m3.walletmanagement.DTO;
 
 public class ResponseDTO {
     private String status;
