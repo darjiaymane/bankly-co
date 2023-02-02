@@ -1,13 +1,14 @@
 package com.m3.walletmanagement.models;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.validation.constraints.NotEmpty;
-import org.springframework.data.annotation.Id;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Column;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.validation.constraints.NotEmpty;
 import java.io.Serializable;
 import java.util.UUID;
-
+@Entity
 public class Wallet implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,6 +26,8 @@ public class Wallet implements Serializable{
     @NotEmpty
     @Column(nullable = false)
     private UUID uuid = UUID.randomUUID();
+
+
 
     public Wallet() {
     }
