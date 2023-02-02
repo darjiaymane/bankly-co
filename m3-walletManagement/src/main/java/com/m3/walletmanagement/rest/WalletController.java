@@ -1,12 +1,10 @@
-package com.m2.transactionsmanagement.rest;
+package com.m3.walletmanagement.rest;
 
-import com.m2.transactionsmanagement.DTO.ResponseDTO;
-import com.m2.transactionsmanagement.models.Wallet;
-import com.m2.transactionsmanagement.services.WalletService;
+import com.m3.walletmanagement.DTO.ResponseDTO;
+import com.m3.walletmanagement.services.WalletService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
 import java.util.UUID;
 
 @RestController

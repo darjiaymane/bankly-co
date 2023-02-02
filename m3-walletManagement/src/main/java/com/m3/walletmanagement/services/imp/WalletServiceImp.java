@@ -1,11 +1,11 @@
-package com.m2.transactionsmanagement.services.imp;
+package com.m3.walletmanagement.services.imp;
 
-import com.m2.transactionsmanagement.models.Wallet;
-import com.m2.transactionsmanagement.repositories.WalletRepository;
-import com.m2.transactionsmanagement.services.WalletService;
+import com.m3.walletmanagement.models.Wallet;
+import com.m3.walletmanagement.repositories.WalletRepository;
+import com.m3.walletmanagement.services.WalletService;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import javax.transaction.Transactional;
 import java.util.List;
 import java.util.UUID;
 

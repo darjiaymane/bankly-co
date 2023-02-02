@@ -1,13 +1,12 @@
-package com.m2.transactionsmanagement.repositories;
+package com.m3.walletmanagement.repositories;
 
-import com.m2.transactionsmanagement.models.Wallet;
-import org.springframework.data.jpa.domain.AbstractAuditable;
+import com.m3.walletmanagement.models.Wallet;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.repository.NoRepositoryBean;
+import org.springframework.stereotype.Repository;
 
 import java.util.UUID;
 
-@NoRepositoryBean
+@Repository
 public interface WalletRepository extends JpaRepository<Wallet, Long> {
     Wallet findByUserId(Long userId);
 

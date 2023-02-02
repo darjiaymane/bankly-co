@@ -1,6 +1,6 @@
-package com.m2.transactionsmanagement.services;
+package com.m3.walletmanagement.services;
 
-import com.m2.transactionsmanagement.models.Wallet;
+import com.m3.walletmanagement.models.Wallet;
 
 import java.util.List;
 import java.util.UUID;
