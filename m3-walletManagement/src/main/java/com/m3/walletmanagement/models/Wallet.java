@@ -15,15 +15,13 @@ public class Wallet implements Serializable{
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @NotEmpty
-    @Column(nullable = false)
-    private Integer solde;
 
-    @NotEmpty
+    @Column(nullable = false)
+    private Integer solde = 0;
+
     @Column(nullable = false)
     private Long userId;
 
-    @NotEmpty
     @Column(nullable = false)
     private UUID uuid = UUID.randomUUID();
 
