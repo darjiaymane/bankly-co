@@ -3,6 +3,8 @@ package com.m1.usersmanagement.models;
 import org.hibernate.validator.constraints.UniqueElements;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 import java.io.Serializable;
 @Entity
@@ -15,12 +17,15 @@ public class User implements Serializable {
     private String firstName;
     @NotEmpty
     private String lastName;
-    @UniqueElements
+    @NotBlank
+    @Email
+    @Column(unique = true)
     private String email;
     @NotEmpty
     private String password;
+    @NotBlank
     @Column(unique = true)
-    private String CIN;
+    private String cin;
 
     public User() {
     }
@@ -31,7 +36,7 @@ public class User implements Serializable {
         this.lastName = lastName;
         this.email = email;
         this.password = password;
-        this.CIN = CIN;
+        this.cin = CIN;
     }
 
     public Long getId() {
@@ -75,10 +80,10 @@ public class User implements Serializable {
     }
 
     public String getCIN() {
-        return CIN;
+        return cin;
     }
 
     public void setCIN(String CIN) {
-        this.CIN = CIN;
+        this.cin = CIN;
     }
 }
