@@ -1,23 +1,19 @@
 package com.m2.transactionsmanagement.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import java.io.Serializable;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 import java.util.Date;
 import java.util.UUID;
 
-@Entity
-public class Transaction implements Serializable {
+@Document(collection = "transactions")
+public class Transaction {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private String id;
     private UUID walletUUID;
     private String type;
     private Integer amount;
     private String description;
-    private Date date;
+    private Date date = new Date();
 
     public Transaction() {
     }
@@ -38,11 +34,11 @@ public class Transaction implements Serializable {
         this.date = new Date();
     }
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -50,7 +46,7 @@ public class Transaction implements Serializable {
         return walletUUID;
     }
 
-    public void setWalletId(UUID walletUUID) {
+    public void setWalletUuid(UUID walletUUID) {
         this.walletUUID = walletUUID;
     }
 
