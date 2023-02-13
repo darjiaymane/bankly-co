@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/discovery-server" />
     <file type="web" url="file://$PROJECT_DIR$/m1-usersManagement" />
     <file type="web" url="file://$PROJECT_DIR$/m2-transactionsManagement" />
     <file type="web" url="file://$PROJECT_DIR$/m3-walletManagement" />
+    <file type="web" url="file://$PROJECT_DIR$/openFeign" />
+    <file type="web" url="file://$PROJECT_DIR$/openFeignModule" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -11,10 +15,11 @@
         <option value="$PROJECT_DIR$/m1-usersManagement/pom.xml" />
         <option value="$PROJECT_DIR$/m2-transactionsManagement/pom.xml" />
         <option value="$PROJECT_DIR$/m3-walletManagement/pom.xml" />
+        <option value="$PROJECT_DIR$/discovery-server/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="openjdk-19" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
   <component name="ProjectType">
     <option name="id" value="jpab" />
   </component>

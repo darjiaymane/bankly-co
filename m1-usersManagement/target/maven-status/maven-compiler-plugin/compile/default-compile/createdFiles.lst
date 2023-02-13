@@ -1,0 +1,8 @@
+com\m1\usersmanagement\DTO\ResponseDTO.class
+com\m1\usersmanagement\models\User.class
+com\m1\usersmanagement\M1UsersManagementApplication.class
+com\m1\usersmanagement\repositories\UserRepository.class
+com\m1\usersmanagement\services\imp\UserServiceImp.class
+com\m1\usersmanagement\ServletInitializer.class
+com\m1\usersmanagement\services\UserService.class
+com\m1\usersmanagement\rest\UserController.class

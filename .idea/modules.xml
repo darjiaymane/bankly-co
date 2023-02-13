@@ -3,9 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/bankly.co.iml" filepath="$PROJECT_DIR$/.idea/bankly.co.iml" />
-      <module fileurl="file://$PROJECT_DIR$/m1-usersManagement/m1-usersManagement.iml" filepath="$PROJECT_DIR$/m1-usersManagement/m1-usersManagement.iml" />
-      <module fileurl="file://$PROJECT_DIR$/m2-transactionsManagement/m2-transactionsManagement.iml" filepath="$PROJECT_DIR$/m2-transactionsManagement/m2-transactionsManagement.iml" />
-      <module fileurl="file://$PROJECT_DIR$/m3-walletManagement/m3-walletManagement.iml" filepath="$PROJECT_DIR$/m3-walletManagement/m3-walletManagement.iml" />
     </modules>
   </component>
 </project>

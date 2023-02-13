@@ -1,0 +1,9 @@
+com\m2\transactionsmanagement\M2TransactionsManagementApplication.class
+com\m2\transactionsmanagement\rest\TransactionController.class
+com\m2\transactionsmanagement\DTO\ResponseDTO.class
+com\m2\transactionsmanagement\DTO\WalletDto.class
+com\m2\transactionsmanagement\repositories\TransactRepository.class
+com\m2\transactionsmanagement\services\TransactionService.class
+com\m2\transactionsmanagement\ServletInitializer.class
+com\m2\transactionsmanagement\models\Transaction.class
+com\m2\transactionsmanagement\services\imp\TransactionServiceImp.class

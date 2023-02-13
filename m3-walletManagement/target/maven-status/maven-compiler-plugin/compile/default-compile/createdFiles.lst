@@ -1,0 +1,8 @@
+com\m3\walletmanagement\repositories\WalletRepository.class
+com\m3\walletmanagement\services\WalletService.class
+com\m3\walletmanagement\rest\WalletController.class
+com\m3\walletmanagement\services\imp\WalletServiceImp.class
+com\m3\walletmanagement\M3WalletManagementApplication.class
+com\m3\walletmanagement\ServletInitializer.class
+com\m3\walletmanagement\DTO\ResponseDTO.class
+com\m3\walletmanagement\models\Wallet.class

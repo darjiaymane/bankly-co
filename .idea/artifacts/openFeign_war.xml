@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="openFeign:war">
+    <output-path>$PROJECT_DIR$/openFeign/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>openFeign</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="openFeign-2.7.8.war">
+      <element id="artifact" artifact-name="openFeign:war exploded" />
+    </root>
+  </artifact>
+</component>

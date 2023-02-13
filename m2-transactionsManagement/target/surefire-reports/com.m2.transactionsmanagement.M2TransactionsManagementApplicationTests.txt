@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.m2.transactionsmanagement.M2TransactionsManagementApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.113 s - in com.m2.transactionsmanagement.M2TransactionsManagementApplicationTests

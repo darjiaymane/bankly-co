@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/discovery-server/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
@@ -8,21 +11,24 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="m2-transactionsManagement" />
-        <module name="m1-usersManagement" />
         <module name="m3-walletManagement" />
+        <module name="discovery-server" />
+        <module name="m1-usersManagement" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="m1-usersManagement" target="11" />
-      <module name="m2-transactionsManagement" target="11" />
-      <module name="m3-walletManagement" target="11" />
+      <module name="openFeign" target="17" />
+      <module name="openFeignModule" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="discovery-server" options="-parameters" />
       <module name="m1-usersManagement" options="-parameters" />
       <module name="m2-transactionsManagement" options="-parameters" />
       <module name="m3-walletManagement" options="-parameters" />
+      <module name="openFeign" options="-parameters" />
+      <module name="openFeignModule" options="-parameters" />
     </option>
   </component>
 </project>
