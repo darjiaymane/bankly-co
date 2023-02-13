@@ -6,7 +6,10 @@ import com.m1.usersmanagement.services.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.ConstraintViolation;
+import javax.validation.ConstraintViolationException;
 import javax.validation.Valid;
+import java.util.Set;
 
 @RestController
 @RequestMapping("/api/users")
@@ -18,7 +21,20 @@ public class UserController {
 
     @PostMapping("/create")
     public ResponseEntity<ResponseDTO> createUser(@RequestBody @Valid User user) {
-        return ResponseEntity.ok(new ResponseDTO("User created successfully", userService.createUser(user), "success"));
+        try {
+            userService.createUser(user);
+            return ResponseEntity.ok(new ResponseDTO("User created successfully", user, "success"));
+        } catch (ConstraintViolationException e) {
+            Set<ConstraintViolation<?>> violations = e.getConstraintViolations();
+            StringBuilder message = new StringBuilder();
+            for (ConstraintViolation<?> violation : violations) {
+                message.append(violation.getMessage()).append(", ");
+            }
+            return ResponseEntity.badRequest().body(new ResponseDTO(message.toString(), null, "failure"));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(new ResponseDTO("Error creating user", null, "failure"));
+        }
+
     }
 
     @PutMapping("/update")
