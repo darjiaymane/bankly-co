@@ -38,7 +38,7 @@ public class TransactionController{
     }
 
     @DeleteMapping("/{walletId}/{transactionId}")
-    public ResponseEntity<ResponseDTO> deleteTransaction(@PathVariable Long transactionId) {
+    public ResponseEntity<ResponseDTO> deleteTransaction(@PathVariable String transactionId) {
         transactionService.deleteTransaction(transactionId);
         return ResponseEntity.ok(new ResponseDTO("Transaction deleted successfully", "success"));
     }

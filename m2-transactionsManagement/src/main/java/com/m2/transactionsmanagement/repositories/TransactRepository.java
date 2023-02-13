@@ -8,6 +8,6 @@ import java.util.List;
 import java.util.UUID;
 
 @Repository
-public interface TransactionRepository extends MongoRepository<Transaction, Long> {
+public interface TransactRepository extends MongoRepository<Transaction, String> {
     List<Transaction> findAllByWalletUUID(UUID walletId);
 }
