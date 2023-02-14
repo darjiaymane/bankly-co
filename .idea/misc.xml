@@ -16,6 +16,7 @@
         <option value="$PROJECT_DIR$/m2-transactionsManagement/pom.xml" />
         <option value="$PROJECT_DIR$/m3-walletManagement/pom.xml" />
         <option value="$PROJECT_DIR$/discovery-server/pom.xml" />
+        <option value="$PROJECT_DIR$/getway/pom.xml" />
       </list>
     </option>
   </component>
