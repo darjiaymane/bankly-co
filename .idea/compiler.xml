@@ -11,6 +11,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="m2-transactionsManagement" />
+        <module name="getway" />
         <module name="m3-walletManagement" />
         <module name="discovery-server" />
         <module name="m1-usersManagement" />
@@ -24,6 +25,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="discovery-server" options="-parameters" />
+      <module name="getway" options="-parameters" />
       <module name="m1-usersManagement" options="-parameters" />
       <module name="m2-transactionsManagement" options="-parameters" />
       <module name="m3-walletManagement" options="-parameters" />
