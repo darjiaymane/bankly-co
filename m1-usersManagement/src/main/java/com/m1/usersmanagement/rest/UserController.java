@@ -49,6 +49,10 @@ public class UserController {
     public ResponseEntity<ResponseDTO> getUser(@PathVariable Long id) {
         return ResponseEntity.ok(new ResponseDTO("User fetched successfully", userService.getUser(id), "success"));
     }
+    @GetMapping("/{email}")
+    public ResponseEntity<ResponseDTO> getUserByEmail(@PathVariable String email) {
+        return ResponseEntity.ok(new ResponseDTO("User fetched successfully", userService.getUserByEmail(email), "success"));
+    }
     @DeleteMapping("/{id}")
     public ResponseEntity<ResponseDTO> deleteUser(@PathVariable Long id) {
         userService.deleteUser(id);
