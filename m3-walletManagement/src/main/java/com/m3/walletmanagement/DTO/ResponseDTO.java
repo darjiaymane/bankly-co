@@ -1,14 +1,16 @@
 package com.m3.walletmanagement.DTO;
 
+import com.m3.walletmanagement.models.Wallet;
+
 public class ResponseDTO {
     private String status;
     private String message;
-    private Object data;
+    private Wallet data;
 
     public ResponseDTO() {
     }
 
-    public ResponseDTO(String message, Object data, String status) {
+    public ResponseDTO(String message, Wallet data, String status) {
         this.status = status;
         this.message = message;
         this.data = data;
@@ -36,7 +38,7 @@ public class ResponseDTO {
         return data;
     }
 
-    public void setData(Object data) {
+    public void setData(Wallet data) {
         this.data = data;
     }
 }
