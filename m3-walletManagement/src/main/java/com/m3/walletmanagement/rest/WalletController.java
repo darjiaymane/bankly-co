@@ -1,6 +1,7 @@
 package com.m3.walletmanagement.rest;
 
 import com.m3.walletmanagement.DTO.ResponseDTO;
+import com.m3.walletmanagement.models.Wallet;
 import com.m3.walletmanagement.services.WalletService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -33,7 +34,7 @@ public class WalletController{
     }
     @GetMapping
     public ResponseEntity<ResponseDTO> getAllWallets() {
-        return ResponseEntity.ok(new ResponseDTO("Wallets retrieved successfully", walletService.getAllWallets(), "success"));
+        return ResponseEntity.ok(new ResponseDTO("Wallets retrieved successfully", (Wallet) walletService.getAllWallets(), "success"));
     }
     @DeleteMapping("/{id}")
     public ResponseEntity<ResponseDTO> deleteWallet(@PathVariable Long id) {
